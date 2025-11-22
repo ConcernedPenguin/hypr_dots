@@ -1,0 +1,187 @@
+/**
+ *
+ * Author : Concerned_Penguin
+ * Github : @Syprozzz
+ * 
+ * Rofi Theme File — Pywal Compatible with `colors-rofi-dark.rasi`
+ **/
+
+/*****----- Configuration -----*****/
+@import "/home/concerned_penguin/.cache/wal/colors-rofi-dark.rasi"
+
+
+  
+configuration {
+    modi:                       "drun";
+    show-icons:                 true;
+    display-drun:               "Applications";
+    drun-display-format:        ">>      {name} [<span weight='light' size='small'><i>({generic})</i></span>]";
+}
+
+/*****----- Global Properties -----*****/
+*{
+    font:                        "Grape Nuts 18 ";
+    text-color:                  @foreground;
+    background-color:            @background;
+} 
+
+/*****----- Main Window -----*****/
+window {
+    transparency:                "real";
+    location:                    center;
+    anchor:                      center;
+    fullscreen:                  false;
+    width:                       860px;
+    x-offset:                    0px;
+    y-offset:                    0px;
+
+    enabled:                     true;
+    margin:                      0px;
+    padding:                     0px;
+    border:                      2px solid;
+    border-radius:               30px;
+    border-color:                @urgent-background;
+    cursor:                      "default";
+   /* background-image:            url("~/.config/rofi/images/paper.png", none);*/
+    background-image: none;
+    background-color: #1e1e2ecc;
+}
+
+/*****----- Main Box -----*****/
+mainbox {
+    enabled:                     true;
+    spacing:                     8px;
+    margin:                      0px;
+    padding:                     0px;
+    border:                      0px solid;
+    border-radius:               30px;
+    border-color:                @background;
+    background-color:            transparent;
+    children:                    [ "inputbar", "listview" ];
+}
+
+/*****----- Inputbar -----*****/
+inputbar {
+    enabled:                     true;
+    spacing:                     0px;
+    margin:                      95px 0px 0px 0px;
+    padding:                     0px 30px;
+    border:                      0px;
+    border-radius:               20px;
+    border-color:                @selected-normal-background;
+    background-color:            transparent;
+    text-color:                  @foreground;
+    children:                    [ "prompt", "entry", "num-filtered-rows", "textbox-num-sep", "num-rows" ];
+}
+
+prompt {
+    enabled:                     true;
+    font:                        "Grape Nuts Bold 18";
+    background-color:            transparent;
+    text-color:                  inherit;
+}
+entry {
+    enabled:                     true;
+    expand:                      true;
+    padding:                     0px 10px 0px 40px;
+    background-color:            transparent;
+    text-color:                  inherit;
+    cursor:                      text;
+    placeholder:                 "Search...";
+    placeholder-color:           inherit;
+}
+num-filtered-rows, textbox-num-sep, num-rows {
+    enabled:                     true;
+    expand:                      false;
+    background-color:            transparent;
+    text-color:                  inherit;
+}
+
+/*****----- Listview -----*****/
+listview {
+    enabled:                     true;
+    columns:                     1;
+    lines:                       15;
+    cycle:                       true;
+    dynamic:                     true;
+    scrollbar:                   false;
+    layout:                      vertical;
+    reverse:                     false;
+    fixed-height:                true;
+    fixed-columns:               true;
+
+    spacing:                     4px;
+    margin:                      0px;
+    padding:                     0px;
+    border:                      0px solid;
+    border-radius:               0px;
+    border-color:                @background;
+    background-color:            transparent;
+    text-color:                  @foreground;
+    cursor:                      "default";
+}
+
+scrollbar {
+    handle-width:                5px;
+    handle-color:                @background;
+    border-radius:               0px;
+    background-color:            transparent;
+}
+
+/*****----- Elements -----*****/
+element {
+    enabled:                     true;
+    spacing:                     0px;
+    margin:                      0px;
+    padding:                     0px 0px 0px 100px;
+    border:                      0px solid;
+    border-radius:               0px;
+    border-color:                @background;
+    background-color:            transparent;
+    text-color:                  @foreground;
+    cursor:                      pointer;
+}
+
+element normal.normal {
+    background-color:            transparent;
+    text-color:                  @foreground;
+}
+element selected.normal {
+    background-color:            transparent;
+    text-color:                  @selected-normal-background;
+}
+element alternate.normal {
+    background-color:            transparent;
+    text-color:                  @foreground;
+}
+
+element-icon {
+    background-color:            transparent;
+    text-color:                  inherit;
+    size:                        24px;
+    cursor:                      inherit;
+}
+element-text {
+    background-color:            transparent;
+    text-color:                  inherit;
+    highlight:                   inherit;
+    cursor:                      inherit;
+    vertical-align:              0.5;
+    horizontal-align:            0.0;
+}
+
+/*****----- Message -----*****/
+error-message {
+    padding:                     20px;
+    border:                      0px solid;
+    border-radius:               0px;
+    border-color:                @background;
+    background-color:            @background;
+    text-color:                  @foreground;
+}
+
+textbox {
+    vertical-align:              0.5;
+    horizontal-align:            0.0;
+}
+

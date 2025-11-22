@@ -1,0 +1,38 @@
+/* pywal rofi theme */
+
+* {
+    background:   ${background};
+    foreground:   ${foreground};
+    border-color: ${color8};
+    border-width: 2px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+window {
+    background:   ${background};
+    border: 2px solid ${color8};
+}
+
+element {
+    background:   ${color0};
+    foreground:   ${foreground};
+}
+
+element selected {
+    background:   ${color4};
+    foreground:   ${color15};
+}
+
+element active {
+    background:   ${color2};
+    foreground:   ${color15};
+}
+
+inputbar {
+    background:   ${background};
+    foreground:   ${foreground};
+    border: 1px solid ${color8};
+}
+
+

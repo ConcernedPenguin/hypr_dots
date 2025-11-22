@@ -1,0 +1,167 @@
+@import "../../.cache/wal/colors-waybar.css";
+@import "mocha.css";
+
+* {
+  font-family: "Font Awesome 7 Free Solid", "JetBrainsMono Nerd Font", sans-serif;
+  font-size: 15px;
+  min-height: 0;
+  
+}
+
+#waybar {
+  background: transparent;
+  color: @foreground;
+  margin: 5px 5px;
+}
+
+#workspaces {
+  border-radius: 1rem;
+  margin: 5px 5px 5px 5px;
+  background-color: @background;
+  margin-left: 0rem;
+}
+
+#workspaces button {
+  color: @color7;
+  border-radius: 1rem;
+  padding: 0.4rem;
+}
+
+#workspaces button.active {
+  color: @color13;
+  border-radius: 1rem;
+}
+
+#workspaces button:hover {
+  color: @color10;
+  border-radius: 1rem;
+}
+
+/*#network,*/
+#custom-media,
+#cava,
+#memory,
+#cpu,
+#custom-arch,
+#custom-music,
+#tray,
+#backlight,
+#clock,
+#battery,
+#pulseaudio,
+#custom-lock,
+#custom-power {
+  background-color: @background;
+  padding: 0.5rem 1rem;
+  margin: 5px 0;
+}
+/*
+#network{
+    margin: 5px 5px 5px 5px;
+    border-radius: 1rem;
+}
+*/
+#custom-media{
+  color: @color13;
+  margin: 5px 5px 5px 5px;
+  border-radius: 1rem;
+}
+
+#cava {
+    margin: 5px 15px 5px 5px; 
+    color: @color13;
+    border-radius: 1rem;
+}
+
+
+#memory{
+    margin: 5px 5px 5px 5px;
+    border-radius: 1rem;
+    color: @color2;
+}
+
+#cpu{
+    margin: 5px 5px 5px 5px;
+    border-radius: 1rem;
+    padding-right: 10px;
+    padding-left: 15px;
+    color: @color5;
+}
+
+#custom-arch{
+    margin: 5px 5px 5px 5px;
+    border-radius: 1rem;
+    font-size: 25px;
+    padding-right: 18px;
+    padding-left: 15px;
+    color: @color4; 
+}
+
+#clock {
+  color: @color2;
+  border-radius: 0px 1rem 1rem 0px;
+  margin-right: 1rem;
+}
+
+/*
+#custom-arch:hover,
+#cpu:hover,
+#memory:hover,
+#custom-media:hover,
+#cava:hover,
+#clock:hover,
+#custom-lock:hover,
+#custom-power:hover,
+#pulseaudio:hover{
+  background: @color9;
+  }
+  */
+
+#battery {
+  color: @color10;
+}
+
+#battery.charging {
+  color: @green;
+}
+
+#battery.warning:not(.charging) {
+  color: @red;
+}
+
+#backlight {
+  color: @yellow;
+}
+
+#backlight, #battery {
+    border-radius: 1rem 0px 0px 1rem;
+}
+
+#pulseaudio {
+  color: @color5;
+  border-radius: 1rem 0px 0px 1rem;
+  margin-left: 0rem;
+}
+
+#custom-music {
+  color: @color10;
+  margin: 5px 5px 5px 5px;
+  border-radius: 1rem;
+}
+
+/*
+#custom-lock {
+    border-radius: 1rem 0px 0px 1rem;
+    color: @color10;
+}
+*/
+#custom-power {
+    margin-right: 1rem;
+    border-radius: 0px 1rem 1rem 0px;
+    color: @color10;
+}
+
+#tray {
+  margin-right: 1rem;
+  border-radius: 1rem;
+}
