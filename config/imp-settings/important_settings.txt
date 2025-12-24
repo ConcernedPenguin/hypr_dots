@@ -1,0 +1,22 @@
+#This is to disable sleep for nvidia grphics card coz whenever it gets into sleep or hibernate state the gpu gets badly intialized and cant recover till the battery gets completely drained
+
+sudo systemctl disable nvidia-suspend.service
+sudo systemctl disable nvidia-hibernate.service
+sudo systemctl disable nvidia-resume.service
+
+sudo nano /etc/modprobe.d/nvidia.conf 
+== this is the location for nvreg and stufff to preserve video memeory allocations
+
+#battery conservation mode 
+cat /sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode
+==if it shows 1 then conservation_mode is enabled if 0 then disabled 
+#to disable 
+echo 0 | sudo tee /sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode
+#to enable
+echo 1 | sudo tee /sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode
+
+#note that 
+At sudo nano /etc/mkinitcpio.conf i have changed hooks to remove kms
+i.e HOOKS=(base systemd autodetect microcode modconf kms keyboard keymap sd-vconsole block filesystems fsck)
+from this line kms was removed to test everything
+

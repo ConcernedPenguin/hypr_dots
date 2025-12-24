@@ -1,0 +1,16 @@
+[[shaders]]
+name = "blue-light-filter"
+enabled = true
+
+[[shaders]]
+name = "pixelate"
+enabled = false
+
+[[shaders]]
+name = "colors"
+enabled = false
+
+[[shaders]]
+name = "tint"
+enabled = false
+
