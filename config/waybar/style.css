@@ -20,7 +20,7 @@
   margin: 5px 5px 5px 5px;
   background-color: alpha(@background, 0.5); 
   margin-left: 0rem;
-  border: 2px solid @color13;
+  border: 0px solid @color13;
 }
 
 #workspaces button {
@@ -70,7 +70,7 @@
   color: @color13;
   margin: 5px 5px 5px 5px;
   border-radius: 1rem;
-  border: 2px solid @color13;
+  border: 0px solid @color13;
 }
 
 #custom-cava {
@@ -79,7 +79,7 @@
     border-radius: 1rem;
     margin: 5px 15px 5px 5px;
     padding: 5px 10px;
-    border: 2px solid @color13;
+    border: 0px solid @color13;
 }
 
 
@@ -87,7 +87,7 @@
     margin: 5px 5px 5px 5px;
     border-radius: 1rem;
     color: @color2;
-    border: 2px solid @color2;
+    border: 0px solid @color2;
 }
 
 #cpu{
@@ -96,7 +96,7 @@
     padding-right: 10px;
     padding-left: 15px;
     color: @color5;
-    border: 2px solid @color5;
+    border: 0px solid @color5;
 }
 
 #custom-arch{
@@ -106,7 +106,7 @@
     padding-right: 13px;
     padding-left: 10px;
     color: @color4;
-    border: 2px solid @color8;
+    border: 0px solid @color8;
 }
 
 #clock {
@@ -116,7 +116,7 @@
   margin-right: 1rem;
   padding-right: 15px;
   padding-left: 15px;
-  border: 2px solid @color2;
+  border: 0px solid @color2;
 }
 
 
@@ -153,7 +153,7 @@
 
 #backlight, #battery {
     border-radius: 1rem;
-    border: 2px solid @color10;
+    border: 0px solid @color10;
 }
 
 #pulseaudio {
@@ -162,14 +162,14 @@
   border-radius: 1rem;
   padding-right: 10px;
   padding-left: 15px;
-  border: 2px solid @color5;
+  border: 0px solid @color5;
 }
 
 #custom-music {
   color: @color10;
   margin: 5px 5px 5px 5px;
   border-radius: 1rem;
-  border: 2px solid @color10;
+  border: 0px solid @color10;
 }
 
 /*
@@ -184,11 +184,11 @@
     color: @color10;
     padding-left: 15px;
     margin: 5px 5px 5px 5px;
-    border: 2px solid @color10;
+    border: 0px solid @color10;
 }
 
 #tray {
   margin-right: 1rem;
   border-radius: 1rem;
-  border: 2px solid @color8;
+  border: 0px solid @color8;
 }

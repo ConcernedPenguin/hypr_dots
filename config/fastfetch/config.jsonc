@@ -1,92 +1,85 @@
-// ~/.config/fastfetch/config.jsonc
-// See https://github.com/fastfetch-cli/fastfetch/wiki/Configuration for more details
-// See *.jsonc in https://github.com/fastfetch-cli/fastfetch/tree/dev/presets/examples for more examples
+// ███████╗ █████╗ ███████╗████████╗███████╗███████╗████████╗ ██████╗██╗  ██╗
+// ██╔════╝██╔══██╗██╔════╝╚══██╔══╝██╔════╝██╔════╝╚══██╔══╝██╔════╝██║  ██║
+// █████╗  ███████║███████╗   ██║   █████╗  █████╗     ██║   ██║     ███████║
+// ██╔══╝  ██╔══██║╚════██║   ██║   ██╔══╝  ██╔══╝     ██║   ██║     ██╔══██║
+// ██║     ██║  ██║███████║   ██║   ██║     ███████╗   ██║   ╚██████╗██║  ██║
+// ╚═╝     ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝     ╚══════╝   ╚═╝    ╚═════╝╚═╝  ╚═╝
+
 {
-  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
-  "logo": {
-    "source": "~/.config/fastfetch/arch",
-    "color": {
-      "1": "blue"
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "logo": {
+    	"source": "/home/concerned_penguin/.config/fastfetch/readin.jpg",
+    	"type": "kitty",
+    	"height": 12,
+    	"padding": {
+    		"top": 2,
+        "left":3
+    	}
     },
-    "type": "file",
-    "padding": {
-      "top": 3
-    }
-  },
-  "display": {
-    "separator": "    "
-  },
-  "modules": [
-    {
-      "type": "custom",
-      "format": "┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓"
+    "display": {
+        "separator": " "
     },
-    "break",
-    {
-      "type": "os",
-      "key": "  ",
-      "keyColor": "blue"
-    },
-    {
-      "type": "kernel",
-      "key": "  ",
-      "keyColor": "white"
-    },
-    {
-      "type": "packages",
-      "key": "  󰮯",
-      "keyColor": "yellow"
-    },
-    {
-      "type": "wm",
-      "key": "  󰨇",
-      "keyColor": "blue"
-    },
-    {
-      "type": "terminal",
-      "key": "  ",
-      "keyColor": "magenta"
-    },
-    {
-      "type": "shell",
-      "key": "  ",
-      "keyColor": "yellow"
-    },
-    "break",
-    {
-      "type": "custom",
-      "format": "┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫"
-    },
-    "break",
-    {
-      "type": "host",
-      "key": "  ",
-      "keyColor": "bright_blue"
-    },
-    {
-      "type": "cpu",
-      "key": "  ",
-      "keyColor": "bright_green"
-    },
-    {
-      "type": "gpu",
-      "key": "  󱤓",
-      "keyColor": "red"
-    },
-    {
-      "type": "memory",
-      "key": "  󰍛",
-      "keyColor": "bright_yellow"
-    },
-    {
-      "type": "disk",
-      "key": "  ",
-      "keyColor": "bright_cyan"
-    },
-    "break",
-    {
-      "type": "custom",
-      "format": "┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛"
-    }
-  ]
+    "modules": [
+	"break",
+	"break",
+{
+            // Clean heading
+            "type": "custom",
+            "format": "\u001b[35m𝐒 𝐘 𝐙\u001b[0m\n"
+        },
+        {
+            "type": "os",
+            "key": " ",
+            "keyColor": "34",  // = color4
+        },
+        {
+            "type": "kernel",
+            "key": " ",
+            "keyColor": "34",
+        },
+        {
+            "type": "packages",
+            "format": "{} (pacman)",
+            "key": " ",
+            "keyColor": "34",  
+        },
+        {
+            "type": "shell",
+            "key": " ",
+            "keyColor": "34", 
+            "format": "Zsh 5.9 (x86_64-pc-linux-gnu)"
+        },
+        {
+            "type": "wm",
+            "key": " ",
+            "keyColor": "34", 
+        },
+        {
+            "type": "cursor",
+            "key": " ",
+            "keyColor": "34", 
+        },
+        {
+            "type": "terminalfont",
+            "key": " ",
+            "keyColor": "34", 
+        },
+        {
+            "type": "uptime",
+            "key": " ",
+            "keyColor": "34", 
+        },
+        {
+            "type": "media",
+            "key": "󰝚 ",
+            "keyColor": "34", 
+        },
+        {
+            // Slim dash bars
+            "type": "custom",
+            "format": "\u001b[90m▃▃▃  \u001b[31m▃▃▃  \u001b[32m▃▃▃  \u001b[33m▃▃▃  \u001b[34m▃▃▃  \u001b[35m▃▃▃  \u001b[36m▃▃▃  \u001b[37m▃▃▃ "
+        },
+        "break",
+        "break",
+    ]
 }

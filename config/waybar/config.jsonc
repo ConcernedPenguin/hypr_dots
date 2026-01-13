@@ -2,7 +2,7 @@
     "layer": "top", // Waybar at top layer
     "position": "top", // Waybar position (top|bottom|left|right)
     "exclusive": true,
-    "height": 56,
+    "height": 55,
     // "width": 1280, // Waybar width
     // Choose the order of the modules
     
